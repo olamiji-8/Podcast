@@ -1,3 +1,4 @@
+import LeftSidebar from "@/components/LeftSidebar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
         <main>
-          <p className="text-white-1">First page</p>
+        <LeftSidebar/>
          {children}   
          <p className="text-white-1">Last page</p>
         </main>
