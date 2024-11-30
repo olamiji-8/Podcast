@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 
 export default function RootLayout({
@@ -7,10 +8,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-        <main>
-          <p className="text-white-1">First page</p>
+        <main className="relative h-screen w-full">
+        <div className="absolUte size-full">
+          <Image src="/image/bg-img.png" alt="background" fill className="size-full"/>
+        </div>
          {children}   
-         <p className="text-white-1">Last page</p>
         </main>
   );
 }
